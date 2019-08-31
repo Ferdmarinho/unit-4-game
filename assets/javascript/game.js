@@ -1,52 +1,40 @@
 
-
-
-
 //$(document).ready(function() {
-    var computerNumber = (Math.floor(Math.random() * (120 - 19 + 1) + 19));
-    var yourScore = "9";
-    var crystalRed = "";
-    var crystalBlue = "";
-    var crystalPurple = "";
-    var crystalGreen = "";
-
+  var computerNumber = (Math.floor(Math.random() * (120 - 19 + 1) + 19));
+  var yourScore = 0;
+  var crystalRed = 12;
+  var crystalGreen = 8;
+  var crystalPurple = 6;
+  var crystalBlue = 1;
+  var yourSum = 0;
 
 //WORKS Spits the number chosen by the computer 
-$("#generatedNumber").html(computerNumber);
+$("#generatedNumber").html("The wizard's number is " + computerNumber );
 
 //What happens when you click on the crystals
+//Example of on click - $( "p" ).click(function() { $( this ).slideUp();});
 
-    $("#ruby").on("click", function() {
-      headsCount++;
-      $("#heads-chosen").text(headsCount);
-      $("#guess").html("<b>Heads</b>");
-      flipThatCoin(0);
-    });
+  $("#ruby").click(function addingRuby() {
+    console.log(yourSum+=crystalRed);
+  });
 
-    $("#emerald").on("click", function() {
-      headsCount++;
-      $("#heads-chosen").text(headsCount);
-      $("#guess").html("<b>Heads</b>");
-      flipThatCoin(0);
-    });
+  $("#emerald").click(function addingEmerald() {
+    console.log(yourSum+=crystalGreen);
+  });
 
-    $("#sapphire").on("click", function() {
-      headsCount++;
-      $("#heads-chosen").text(headsCount);
-      $("#guess").html("<b>Heads</b>");
-      flipThatCoin(0);
-    });
+  $("#sapphire").click(function addingSapphire() {
+    console.log(yourSum+=crystalPurple);
+  });
 
-    $("#quartz").on("click", function() {
-      headsCount++;
-      $("#heads-chosen").text(headsCount);
-      $("#guess").html("<b>Heads</b>");
-      flipThatCoin(0);
-    });
+  $("#quartz").click(function addingQuartz(){
+    console.log(yourSum+=crystalBlue);
+  });
 
 
+$("#scoreNumber").html("The number of crystals you have so far is  " + yourScore );
 
-    //PSEUDOCODE
-    //Page generates a ramdom number
-    //User clicks on different crystals. Each one has one different value.
-    //User wins if the sum of the values is equal ramdom number. 
+
+  //PSEUDOCODE
+  //Page generates a ramdom number
+  //User clicks on different crystals. Each one has one different value.
+  //User wins if the sum of the values is equal ramdom number. 
