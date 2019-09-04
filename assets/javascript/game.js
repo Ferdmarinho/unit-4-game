@@ -7,6 +7,7 @@
   var crystalPurple = 6;
   var crystalBlue = 1;
   var yourSum = 0;
+  var finalSum = yourSum;
 
 //WORKS Spits the number chosen by the computer 
 $("#generatedNumber").html("The wizard's number is " + computerNumber );
@@ -15,23 +16,36 @@ $("#generatedNumber").html("The wizard's number is " + computerNumber );
 //Example of on click - $( "p" ).click(function() { $( this ).slideUp();});
 
   $("#ruby").click(function addingRuby() {
-    console.log(yourSum+=crystalRed);
+    (yourSum+=crystalRed);
   });
 
   $("#emerald").click(function addingEmerald() {
-    console.log(yourSum+=crystalGreen);
+    (yourSum+=crystalGreen);
   });
 
   $("#sapphire").click(function addingSapphire() {
-    console.log(yourSum+=crystalPurple);
+    (yourSum+=crystalPurple);
   });
 
   $("#quartz").click(function addingQuartz(){
-    console.log(yourSum+=crystalBlue);
+    (yourSum+=crystalBlue);
   });
 
+//This Variable is the sum of all crystals
+var finalSum = (addingRuby());
 
-$("#scoreNumber").html("The number of crystals you have so far is  " + yourScore );
+console.log(finalSum);
+
+  $("#scoreNumber").html("The number of crystals you have so far is  " + yourSum );
+  
+  if (computerNumber = finalSum) {
+    $("#winnerMessage").html("You won one!");
+  }
+  
+ 
+  //}
+
+
 
 
   //PSEUDOCODE
