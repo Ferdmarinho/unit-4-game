@@ -1,0 +1,19 @@
+p { font-family: 'Merienda', cursive;
+    font-size: 16px;
+    line-height: 18px;
+}
+a, h1, h2, h3, h4 {
+    font-family: 'Aladin', cursive;
+}
+h1 {
+    color: aliceblue;
+}
+body {
+    background-image: url("https://wallpapertag.com/wallpaper/full/9/4/7/142844-full-size-vector-backgrounds-2560x1440.jpg");
+    padding-top: 20px;
+    
+}
+.col {
+    padding: 15px;
+    
+}

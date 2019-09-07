@@ -16,27 +16,33 @@
     <!-- Added a link to our external stylesheet-->
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Aladin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merienda&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
     <div class="container col-8">
 
-    <h1>The Gems Collector</h1>
+    <h1>The Crystal Collector</h1>
 
     <h3>Here is how it works</h3>
 
         <div class="row">
             <div class="col bg-light">
-              <p>Game Instructions Go Here</p>
-              <p>Game Instructions Go Here</p>
-              <p>Game Instructions Go Here</p>
-              <p>Game Instructions Go Here</p>
-              <p>Game Instructions Go Here</p>
+              <p>The objective of this game is to match the Master Crystal Number</p>
+              <p> - Every crystal has different power value</p>
+              <p> - Clicking on each crystal will generate a different power number</p>
+              <p> - Every time you click on a crystal, its power number is added to your power</p>
+              <p> - When your power number reaches the Master Crystal Number, you win</p>
             </div>
             <div class="col bg-light">
-              <p id="generatedNumber"></p>
-              <p id="scoreNumber"></p>
+              <h3 id="generatedNumber"></h3>
+              <h3 id="crystalsYouHave"></h3>
+              <h2 id="yourTotal"></h2>
               <p id="winnerMessage"></p>
+              <p id="loserMessage"></p>
             </div>
         </div>
 
